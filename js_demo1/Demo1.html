@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form>
+            <input type="text" name="name" onblur="demo()" />
+             <span id="S1" hidden></span>   
+        </form>
+
+    </body>
+    <script>
+    function demo()
+    {
+        var myform=document.forms[0];
+        var name=myform.name.value;
+        document.writeln(name.slice(2,5));
+
+    }
+    </script>
+</html>

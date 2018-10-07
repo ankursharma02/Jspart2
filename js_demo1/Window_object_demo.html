@@ -1,0 +1,36 @@
+<html>
+    <body>
+            <button onclick="predemo()">&laquo; pre </button> &nbsp;&nbsp;&nbsp;
+        <a href="Hist_demo.html">click</a>&nbsp; &nbsp;&nbsp;
+        <button onclick="demo()">click me</button>&nbsp; &nbsp;&nbsp;
+        
+        <button onClick="window.open('Screen_demo.html');" >Click for Screen_info</button> &nbsp;&nbsp;&nbsp;
+        <button onclick="nextdemo()">next &raquo;</button>
+    </body>
+    <script>
+    function demo()
+    {
+        alert("u clicked me");
+        var v= confirm("r u realy click me");
+
+        if(v)
+        alert("u clicked OK");
+        else
+        alert("u clicked cancel ");
+        v= prompt("Who are you?");  
+        alert("Welcome "+v);   
+       
+         open("img102.jpg");   
+    }
+    function nextdemo()
+    {
+        history.forward();
+        
+    }
+    function predemo()
+    {
+        history.back();
+    }
+
+    </script>
+    </html>
